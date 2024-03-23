@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ThemeProvider } from "@/Providers/ThemeProvider";
 import { Poppins } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -22,6 +23,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <GoogleAnalytics gaId="G-DN983T9MER" />
         </ThemeProvider>
       </body>
     </html>
