@@ -34,6 +34,7 @@ const Navbar = () => {
                 alt="logo"
                 width={70}
                 height={70}
+                className="h-auto"
               />
               <div className="flex flex-col -space-y-1">
                 <h1 className="-ml-1 text-lg xl:text-xl font-bold">
