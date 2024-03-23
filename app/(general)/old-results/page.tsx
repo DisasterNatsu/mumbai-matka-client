@@ -1,7 +1,8 @@
-import LastTwoDaysTable from "@/components/Home/LastTwoDaysTable";
+import PreviousTable from "@/components/old-results/PreviousTable";
 import SocialButton from "@/components/shared/SocialButtons";
 import { QueryDateFormatter } from "@/helpers/QueryDateFormatter";
 import { Axios } from "@/utils/AxiosConfig";
+import Image from "next/image";
 import React from "react";
 
 const OldResults = async () => {
@@ -40,11 +41,24 @@ const OldResults = async () => {
             Matka
           </p>
         </div>
-        <div className="mx-auto mb-5">
-          <SocialButton home />
+        <div className="mx-auto w-full mb-5">
+          <SocialButton />
         </div>
+        <a
+          href="https://kolkataff.space/"
+          className="flex items-center justify-center gap-2 border-2 border-siteAccentLight dark:border-siteAccentDark py-2 rounded-md md:w-[285px] lg:-mt-14 w-full mx-auto font-semibold animate-bounce"
+        >
+          <Image
+            src={"/logo.png"}
+            alt="Smart Matka Logo"
+            height={40}
+            width={40}
+            className="w-auto h-auto"
+          />{" "}
+          Kolkata FF Results
+        </a>
       </section>
-      <LastTwoDaysTable data={oldData} />
+      <PreviousTable data={oldData} />
     </>
   );
 };

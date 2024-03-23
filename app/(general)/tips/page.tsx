@@ -3,6 +3,7 @@ import { TimeArr } from "@/Constants/NumberArray";
 import { DateFormatter } from "@/helpers/DateFormatter";
 import { QueryDateFormatter } from "@/helpers/QueryDateFormatter";
 import { Axios } from "@/utils/AxiosConfig";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -45,8 +46,24 @@ const Tips = async () => {
         </p>
       </div>
 
+      <div className="sm:mt-20">
+        <a
+          href="https://kolkataff.space/tips"
+          className="flex mt-5 items-center justify-center gap-2 border-2 border-siteAccentLight dark:border-siteAccentDark py-2 rounded-md md:w-[285px] lg:-mt-14 w-full mx-auto font-semibold animate-bounce"
+        >
+          <Image
+            src={"/logo.png"}
+            alt="Smart Matka Logo"
+            height={40}
+            width={40}
+            className="w-auto h-auto"
+          />{" "}
+          Kolkata FF Tips
+        </a>
+      </div>
+
       <section>
-        <h3 className="mt-5 text-center text-2xl font-bold accent-colors py-2">
+        <h3 className="mt-5 text-center text-2xl font-semibold accent-colors py-2">
           Tips for [{formattedDate}]
         </h3>
 

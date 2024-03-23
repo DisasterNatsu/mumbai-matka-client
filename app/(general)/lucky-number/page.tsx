@@ -3,6 +3,7 @@ import React from "react";
 import PattiTips from "../../../components/luckyNumber/PattiTips";
 import SocialButton from "@/components/shared/SocialButtons";
 import Link from "next/link";
+import Image from "next/image";
 
 const LuckyNumber = () => {
   return (
@@ -22,6 +23,19 @@ const LuckyNumber = () => {
       <div className="w-full h-full mt-5">
         <section className="flex w-full md:flex-row flex-col items-center md:items-start gap-5 md:gap-10 md:px-5">
           <Roulette />
+          <a
+            href="https://kolkataff.space/lucky-number"
+            className="flex mt-5 sm:hidden items-center justify-center gap-2 border-2 border-siteAccentLight dark:border-siteAccentDark py-2 rounded-md md:w-[285px] lg:-mt-14 w-full mx-auto font-semibold animate-bounce"
+          >
+            <Image
+              src={"/logo.png"}
+              alt="Smart Matka Logo"
+              height={40}
+              width={40}
+              className="w-auto h-auto"
+            />{" "}
+            Kolkata FF Lucky Number
+          </a>
 
           <div className="flex flex-col space-y-3">
             <h1 className="font-bold text-2xl md:text-3xl">
@@ -47,6 +61,19 @@ const LuckyNumber = () => {
               Are you ready to uncover your destiny? Spin the wheel now and see
               what luck has in store for you!
             </p>
+            <a
+              href="https://kolkataff.space/lucky-number"
+              className="mt-20 items-center hidden sm:flex justify-center gap-2 border-2 border-siteAccentLight dark:border-siteAccentDark py-2 rounded-md w-full mx-auto font-semibold animate-bounce"
+            >
+              <Image
+                src={"/logo.png"}
+                alt="Smart Matka Logo"
+                height={40}
+                width={40}
+                className="w-auto h-auto"
+              />{" "}
+              Kolkata FF Lucky Number
+            </a>
           </div>
         </section>
 

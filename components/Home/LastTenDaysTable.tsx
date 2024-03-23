@@ -36,13 +36,16 @@ const LastTenDaysTable = ({ data }: { data: LatestUpdateDataType[] }) => {
           {/* table body */}
 
           {data &&
-            data.map((item: LatestUpdateDataType, index: number) => {
+            data.reverse().map((item: LatestUpdateDataType, index: number) => {
               const day = getDayOfWeek(item.date);
 
               return (
-                <TableBody key={index}>
+                <TableBody key={index} className="border-b">
                   <TableRow>
-                    <TableCell className="px-0 text-xs font-semibold text-center md:text-base md:font-bold bg-slate-300 dark:bg-slate-900">
+                    <TableCell
+                      className="p-0 text-xs font-semibold text-center md:text-base md:font-bold bg-slate-300 dark:bg-slate-900 border-b"
+                      id={index === data.length - 11 ? "last-ten-days" : ""}
+                    >
                       {day} <br className="sm:hidden" />{" "}
                       {item.date.split("-").splice(0, 2).join("/")}
                     </TableCell>

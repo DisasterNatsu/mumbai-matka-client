@@ -1,5 +1,11 @@
-import { ThemeProvider } from "@/Providers/ThemeProvider";
 import "./globals.css";
+import { ThemeProvider } from "@/Providers/ThemeProvider";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -8,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={`${poppins.className} sm:px-5`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

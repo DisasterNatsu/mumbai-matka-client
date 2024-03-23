@@ -10,6 +10,7 @@ import LastTenDaysTable from "@/components/Home/LastTenDaysTable";
 import TimeTable from "@/components/Home/TilmeTable";
 import FAQ from "@/components/Home/FAQ";
 import InformationTable from "@/components/Home/InformationTable";
+import Image from "next/image";
 
 const getCurrentDayData = async (date: string) => {
   const request = await Axios.get(`/get/current/${date}`);
@@ -54,7 +55,7 @@ const Home = async () => {
       <meta property="og:url" content="https://smartmumbaimatka.in" />
       <meta
         name="description"
-        content="Mumbai Matka Result Kolkata FATAFAT Result Today Live All 8 Baji Live Super Fast With Tips & Old Results, 220 Patti Chart, Lucky Number - কলকাতা ff"
+        content="Mumbai Matka Result Kolkata FATAFAT Result Today Live All 8 Baji Live Super Fast With Tips & Old Results, 220 Patti Chart, Lucky Number Smart Matka Smart Mumbai Matks"
       />
       <link rel="canonical" href="https://smartmumbaimatka.in" />
       {/* date */}
@@ -85,34 +86,66 @@ const Home = async () => {
           On this website, you will get <strong>Super Fast</strong> Mumbai Smart
           Matka Result Live Online. <br />
           We also provide{" "}
+        </p>
+        <div className="flex flex-col sm:hidden justify-center items-center space-y-3 mt-4">
           <Link
-            href={"/tips"}
-            className="font-semibold dark:text-siteAccentDark text-siteAccentLight "
+            href={"#last-ten-days"}
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
           >
-            Tips
+            Last 10 Days Result
           </Link>
-          ,{" "}
+
           <Link
-            href="/patti-chart"
-            className="font-semibold dark:text-siteAccentDark text-siteAccentLight "
+            href="/tips"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
           >
-            Patti Chart
+            Mumbai Matka Tips
           </Link>
-          ,{" "}
+
+          <Link
+            href="/prev-res"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            Old Result 2024
+          </Link>
+
           <Link
             href="/lucky-number"
-            className="font-semibold dark:text-siteAccentDark text-siteAccentLight "
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
           >
             Lucky Number
-          </Link>{" "}
-          and{" "}
-          <Link
-            href="/old-results"
-            className="font-semibold dark:text-siteAccentDark text-siteAccentLight "
-          >
-            Old Result Chart
           </Link>
-        </p>
+
+          <Link
+            href="/tips"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            Patti Tips
+          </Link>
+
+          {/* Mumbai Satta Matka */}
+
+          <Link href={"https://kolkataff.space/"}>
+            <Image
+              src={"/logo.png"}
+              alt="Smart Matka Logo"
+              height={500}
+              width={500}
+              className="h-auto"
+            />
+          </Link>
+
+          <p className="text-center px-5">
+            To get live <strong>Super Fast</strong> Smart Matka | Smart Mumbai
+            Matka results{" "}
+            <Link
+              href={"https://smartmumbaimatka.in/"}
+              className="dark:text-accentColor font-semibold"
+            >
+              Click Here
+            </Link>
+          </p>
+        </div>
       </section>
 
       <h2 className="border-b-2 dark:border-white mb-4 text-center py-1 text-xl md:text-2xl font-bold">

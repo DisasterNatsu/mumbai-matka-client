@@ -46,7 +46,7 @@ const Navbar = () => {
 
           {/* links */}
 
-          <ul className="flex h-full items-center space-x-2 text-base font-semibold">
+          <ul className="flex h-full items-center space-x-1 text-base font-semibold">
             {NavData.map((navLinks: NavDataType) => (
               <li key={navLinks.path}>
                 <Link
@@ -63,8 +63,10 @@ const Navbar = () => {
         {/* auth and theme toggle */}
 
         <div className="flex space-x-2 h-full items-center">
-          <Button>Sign In</Button>
-          <Button variant={"outline"}>Register</Button>
+          <Button className="md:hidden xl:flex">Sign In</Button>
+          <Button variant={"outline"} className="md:hidden xl:flex">
+            Register
+          </Button>
           <ThemeToggle />
         </div>
       </nav>

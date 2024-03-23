@@ -25,7 +25,7 @@ const TypeWriter = () => {
         <SocialButton home={true} />
         <a
           href="https://kolkataff.space"
-          className="flex items-center justify-center gap-2 border-2 dark:border-siteAccentDark border-siteAccentLight py-2 rounded-md md:w-[265px] w-full mx-auto md:mx-0 font-semibold"
+          className="flex items-center justify-center gap-2 border-2 dark:border-siteAccentDark border-siteAccentLight py-2 rounded-md md:w-[265px] w-full mx-auto md:mx-0 font-semibold "
         >
           <Image
             src={"/logo.png"}

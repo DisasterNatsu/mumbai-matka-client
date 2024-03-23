@@ -101,6 +101,7 @@ const CurrentDayTable = ({ data }: { data?: LatestUpdateDataType }) => {
         <Button
           variant={"secondary"}
           className="font-semibold text-lg lg:hidden"
+          onClick={() => Router.push("/tips")}
         >
           Tips
         </Button>
