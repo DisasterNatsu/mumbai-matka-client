@@ -30,3 +30,9 @@ interface LatestUpdateDataType {
   __v: number;
   createdAt: string;
 }
+
+interface RepeatPattiType {
+  _id: string;
+  repeatPatti: RepeatPattiTypeSub[];
+  __v: number;
+}

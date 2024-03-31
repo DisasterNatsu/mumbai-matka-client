@@ -9,22 +9,22 @@ const Footer = () => {
         <div className="flex flex-col items-center sm:items-start space-y-4">
           <h1 className="text-xl font-semibold">Important Links</h1>
           <Link
-            href={"#"}
+            href={"/privacy"}
             className="hover:text-siteAccentLight/80 dark:hover:text-siteAccentDark"
           >
-            Previous Links
+            Privacy
           </Link>
           <Link
-            href={"#"}
+            href={"/tips"}
             className="hover:text-siteAccentLight/80 dark:hover:text-siteAccentDark"
           >
             Tips
           </Link>
           <Link
-            href={"#"}
+            href={"/about"}
             className="hover:text-siteAccentLight/80 dark:hover:text-siteAccentDark"
           >
-            Suggestions
+            About
           </Link>
           <Link
             href={"#"}

@@ -11,6 +11,7 @@ import TimeTable from "@/components/Home/TilmeTable";
 import FAQ from "@/components/Home/FAQ";
 import InformationTable from "@/components/Home/InformationTable";
 import Image from "next/image";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const getCurrentDayData = async (date: string) => {
   const request = await Axios.get(`/get/current/${date}`);
@@ -71,22 +72,11 @@ const Home = async () => {
 
       {/* result of last two days */}
 
-      <h2 className="border-b-2 dark:border-white mb-4 text-center py-1 text-xl md:text-2xl font-bold">
-        Result of Last Two Days
-      </h2>
       <LastTwoDaysTable data={lastTwoDaysData} />
 
       {/* some text content */}
 
       <section className="mb-4">
-        <h2 className="text-center font-bold my-3 text-2xl">
-          Mumbai Smart Matka Result Today
-        </h2>
-        <p className="text-center text-sm">
-          On this website, you will get <strong>Super Fast</strong> Mumbai Smart
-          Matka Result Live Online. <br />
-          We also provide{" "}
-        </p>
         <div className="flex flex-col sm:hidden justify-center items-center space-y-3 mt-4">
           <Link
             href={"#last-ten-days"}
@@ -122,8 +112,14 @@ const Home = async () => {
           >
             Patti Tips
           </Link>
+          <Link
+            href="https://t.me/kolkataFFspace"
+            className="flex items-center justify-center gap-1 text-xl font-semibold bg-cyan-600 text-white w-full py-1 rounded-md"
+          >
+            <FaTelegramPlane /> Telegram
+          </Link>
 
-          {/* Mumbai Satta Matka */}
+          {/* Kolkata Fatafat */}
 
           <Link href={"https://kolkataff.space/"}>
             <Image
@@ -134,6 +130,15 @@ const Home = async () => {
               className="h-auto"
             />
           </Link>
+
+          <h2 className="text-center font-bold my-5 text-2xl">
+            Mumbai Smart Matka Result Today
+          </h2>
+          <p className="text-center text-sm">
+            On this website, you will get <strong>Super Fast</strong> Mumbai
+            Smart Matka Result Live Online. <br />
+            We also provide{" "}
+          </p>
 
           <p className="text-center px-5">
             To get live <strong>Super Fast</strong> Smart Matka | Smart Mumbai

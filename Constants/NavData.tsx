@@ -3,8 +3,7 @@ import {
   ArrowLeftSquare,
   Clover,
   BarChart3,
-  BookA,
-  Lock,
+  IndianRupee,
 } from "lucide-react";
 
 export const NavData: NavDataType[] = [
@@ -12,6 +11,11 @@ export const NavData: NavDataType[] = [
     title: "Tips",
     path: "/tips",
     icon: <BadgeIndianRupee />,
+  },
+  {
+    title: "Patti Tips",
+    path: "/patti-tips",
+    icon: <IndianRupee />,
   },
   {
     title: "Old Results",
@@ -27,15 +31,5 @@ export const NavData: NavDataType[] = [
     title: "Patti Chart",
     path: "/patti-chart",
     icon: <BarChart3 />,
-  },
-  {
-    title: "About",
-    path: "/about",
-    icon: <BookA />,
-  },
-  {
-    title: "Privacy",
-    path: "/privacy",
-    icon: <Lock />,
   },
 ];

@@ -1,3 +1,4 @@
+import RepeatPatti from "@/components/patti-tips/RepeatPatti";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { TimeArr } from "@/Constants/NumberArray";
 import { DateFormatter } from "@/helpers/DateFormatter";
@@ -8,27 +9,56 @@ import Link from "next/link";
 import React from "react";
 
 const getTips = async (date: string) => {
-  const request = await Axios.get(`/get/tips/${date}`);
+  const request = await Axios.get(`/get/patti-tips/${date}`);
 
   const response = await request.data;
 
   return response;
 };
 
-const Tips = async () => {
+const getRepeatTips = async () => {
+  const res = await Axios.get("/get/repeat-patti");
+
+  const repeatPatti = await res.data;
+
+  if (repeatPatti) {
+    return { repeatPatti };
+  }
+
+  return { repeatPatti: null };
+};
+
+const PattiTips = async () => {
   const date = QueryDateFormatter();
 
   const data = await getTips(date);
 
   const { formattedDate } = DateFormatter();
 
+  const { repeatPatti } = await getRepeatTips();
+
   return (
     <>
-      <title>Mumbai Matka | Tips</title>
+      <title>Mumbai Matka | Patti Tips</title>
+      <meta
+        name="description"
+        content="Yaha Pe Daily Mumbai Smart Matka Tips for those who are confused what to play we provide a general solution"
+      />
+      <meta property="og:title" content="Mumbai Matka | Patti Tips" />
+      <meta
+        property="og:url"
+        content="https://smartmumbaimatka.in/patti-tips"
+      />
+      <meta
+        property="og:description"
+        content="Yaha Pe Daily Mumbai Smart Matka Tips for those who are confused what to play we provide a general solution"
+      />
+      <meta property="og:type" content="website" />
+      <link rel="canonical" href="https://smartmumbaimatka.in/patti-tips" />
 
       <div className="flex md:items-start justify-center items-center mt-4 flex-col space-y-3">
         <h1 className="font-bold text-2xl border-b dark:border-white pb-1 border-black">
-          Mumbai Matka Tips
+          Mumbai Matka Patti Tips
         </h1>
 
         <p className="text-lg text-center md:text-start">
@@ -62,9 +92,15 @@ const Tips = async () => {
         </a>
       </div>
 
+      {/* Repeat Patti */}
+
+      <RepeatPatti data={repeatPatti} />
+
       <section>
-        <h3 className="mt-5 text-center text-2xl font-semibold accent-colors py-2">
-          Tips for [{formattedDate}]
+        {/* Table Heading */}
+
+        <h3 className="mt-5 text-center text-xl font-semibold accent-colors py-2">
+          Patti Tips for [{formattedDate}]
         </h3>
 
         <Table className="cursor-default border-b dark:border-white">
@@ -72,7 +108,7 @@ const Tips = async () => {
             {data
               ? TimeArr.map((_, index: number) => (
                   <TableRow key={index}>
-                    <TableCell className="font-medium text-center border-r dark:border-r-white w-[50%] text-lg">
+                    <TableCell className="font-medium text-center border-r dark:border-r-white w-[50%] text-sm sm:text-lg">
                       {index + 1}
                       {index === 0
                         ? "st"
@@ -81,9 +117,9 @@ const Tips = async () => {
                         : index === 2
                         ? "rd"
                         : "th"}{" "}
-                      Baji Tips
+                      Baji Patti Tips
                     </TableCell>
-                    <TableCell className="text-center font-medium w-[50%] text-lg">
+                    <TableCell className="text-center font-medium w-[50%] text-base sm:text-lg">
                       {data.tips[index] ? data.tips[index].tip : "--"}
                     </TableCell>
                   </TableRow>
@@ -110,6 +146,35 @@ const Tips = async () => {
                 })}
           </TableBody>
         </Table>
+      </section>
+
+      <section className="mb-4">
+        <div className="flex flex-col sm:hidden justify-center items-center space-y-3 mt-4">
+          <Link
+            href="/"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            Smart Matka Result
+          </Link>
+          <Link
+            href="/tips"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            Tips
+          </Link>
+          <Link
+            href="/lucky-number"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            Smart Matka Lucky Number
+          </Link>
+          <Link
+            href="/old-results"
+            className="font-semibold accent-colors w-full text-center py-1 rounded-md text-xl"
+          >
+            All Results 2024
+          </Link>
+        </div>
       </section>
 
       <section className="my-5 px-5">
@@ -202,4 +267,4 @@ const Tips = async () => {
 
 export const revalidate = 10;
 
-export default Tips;
+export default PattiTips;

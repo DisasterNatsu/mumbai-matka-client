@@ -1,11 +1,22 @@
+"use client";
+
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { LogIn, LogOut, NotebookPen, X } from "lucide-react";
 import Cookies from "js-cookie";
 import Image from "next/image";
 import { NavData } from "@/Constants/NavData";
+import { useRouter } from "next/navigation";
 
 const MobileNav = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
+  const router = useRouter();
+
+  const handleRedirectHome = () => {
+    router.push("/");
+
+    return setMobileMenuOpen(false);
+  };
+
   return (
     <Dialog
       as="div"
@@ -19,23 +30,25 @@ const MobileNav = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
 
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <Link href={"/"}>
+            <button onClick={handleRedirectHome} className="flex items-center">
               <Image
                 src="/smartmumbailogo.png"
                 alt="logo"
                 width={40}
                 height={40}
-              />{" "}
-            </Link>
-            <Link href={"/"}>
-              <p className="md:text-2xl font-semibold">
-                Mumbai{" "}
-                <span className="text-siteAccentLight dark:text-siteAccentDark">
-                  Matka
-                </span>
-              </p>
-              <p className="text-xs -mt-1">🚀 Sabse pahele result 🚀</p>
-            </Link>
+              />
+              <h2>
+                <p className="md:text-2xl font-semibold text-left">
+                  Mumbai{" "}
+                  <span className="text-siteAccentLight dark:text-siteAccentDark">
+                    Matka
+                  </span>
+                </p>
+                <p className="text-xs -mt-1 text-left">
+                  🚀 Sabse pahele result 🚀
+                </p>
+              </h2>
+            </button>
           </div>
           <button
             type="button"

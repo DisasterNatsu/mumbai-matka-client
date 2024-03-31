@@ -6,15 +6,19 @@ import SocialButton from "../shared/SocialButtons";
 
 const TypeWriter = () => {
   return (
-    <div className="grid md:grid-cols-2 w-full px-0 my-5">
+    <div className="grid md:grid-cols-2 w-full px-0 my-2">
       {/* Left */}
       <div className="flex flex-col gap-5 justify-center p-5">
         <h1 className="lg:text-5xl md:text-4xl text-2xl text-center md:text-left">
-          One stop solution for <br />
           <span className="font-semibold md:mt-2">
             <Typewriter
               options={{
-                strings: ["Kokata FF", "Smart Matka", "Mumbai Matka"],
+                strings: [
+                  "Mumbai Matka",
+                  "Smart Matka",
+                  "Smart Mumbai Matka",
+                  "Use Magic Tool",
+                ],
                 autoStart: true,
                 loop: true,
               }}
@@ -25,7 +29,7 @@ const TypeWriter = () => {
         <SocialButton home={true} />
         <a
           href="https://kolkataff.space"
-          className="flex items-center justify-center gap-2 border-2 dark:border-siteAccentDark border-siteAccentLight py-2 rounded-md md:w-[265px] w-full mx-auto md:mx-0 font-semibold "
+          className="flex items-center justify-center gap-2 border-2 dark:border-siteAccentDark border-siteAccentLight py-2 rounded-md md:w-[307px] w-full mx-auto md:mx-0 font-semibold animate-bounce"
         >
           <Image
             src={"/logo.png"}

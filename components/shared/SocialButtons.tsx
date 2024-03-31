@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaWandMagicSparkles } from "react-icons/fa6";
 
 const SocialButton = ({ home }: { home?: boolean }) => {
   return (
@@ -18,12 +17,11 @@ const SocialButton = ({ home }: { home?: boolean }) => {
         Whatsapp
       </a>
       <a
-        href="https://t.me/kolkataFFspace"
-        target="_blank"
-        className="flex items-center gap-2 bg-cyan-400 py-2 px-3 rounded-md text-white font-semibold hover:scale-105 duration-500"
+        href="#last-ten-days"
+        className="flex items-center gap-2 bg-red-600 py-2 px-3 rounded-md text-white font-semibold hover:scale-105 duration-500"
       >
-        <FaTelegramPlane className="text-white w-5 h-5" />
-        Telegram
+        <FaWandMagicSparkles className="text-white w-5 h-5" />
+        Magic Tools
       </a>
     </section>
   );
