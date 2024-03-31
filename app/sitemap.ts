@@ -9,16 +9,22 @@ const sitemap = (): MetadataRoute.Sitemap => {
       priority: 1,
     },
     {
-      url: "https://smartmumbaimatka.in/old-result",
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.8,
-    },
-    {
       url: "https://smartmumbaimatka.in/tips",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
+    },
+    {
+      url: "https://smartmumbaimatka.in/patti-tips",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: "https://smartmumbaimatka.in/old-result",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.8,
     },
     {
       url: "https://smartmumbaimatka.in/lucky-number",
