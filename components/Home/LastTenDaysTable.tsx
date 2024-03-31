@@ -128,7 +128,7 @@ const LastTenDaysTable = ({ data }: { data: LatestUpdateDataType[] }) => {
 
       <div>
         <h3 className="text-center mt-2 font-semibold py-2">
-          বক্স ঘরে ক্লিক করে বিগত দিনের রিপিট ঘর দেখুন।
+          Click the Box to highlight the numbers to compare Repeated Pattis
         </h3>
 
         <ul className="flex mt-2 items-center justify-center space-x-2">
