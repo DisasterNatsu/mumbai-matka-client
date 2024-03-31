@@ -3,8 +3,6 @@ import { Table, TableBody, TableCell, TableRow } from "../ui/table";
 import { numArr } from "@/Constants/NumberArray";
 
 const RepeatPatti = ({ data }: { data: RepeatPattiType }) => {
-  console.log(data);
-
   return (
     <section>
       <h2 className="mt-5 text-center text-2xl font-bold bg-siteAccentLight dark:bg-siteAccentDark text-white dark:text-black">

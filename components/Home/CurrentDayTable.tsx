@@ -100,7 +100,7 @@ const CurrentDayTable = ({ data }: { data?: LatestUpdateDataType }) => {
       <div className="flex justify-center items-center gap-3 mt-3">
         <Button
           variant={"secondary"}
-          className="font-semibold text-lg lg:hidden"
+          className="text-lg lg:hidden"
           onClick={() => Router.push("/tips")}
         >
           Tips
@@ -111,6 +111,13 @@ const CurrentDayTable = ({ data }: { data?: LatestUpdateDataType }) => {
         >
           Refresh
         </button>
+        <Button
+          variant={"secondary"}
+          className="text-lg lg:hidden"
+          onClick={() => Router.push("/patti-tips")}
+        >
+          Patti Tips
+        </Button>
       </div>
     </section>
   );
