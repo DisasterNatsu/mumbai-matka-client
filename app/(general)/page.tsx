@@ -52,11 +52,11 @@ const Home = async () => {
 
   return (
     <>
-      <title>Mumbal Satta Matka</title>
+      <title>Smart Matka</title>
       <meta property="og:url" content="https://smartmumbaimatka.in" />
       <meta
         name="description"
-        content="Mumbai Matka Result Kolkata FATAFAT Result Today Live All 8 Baji Live Super Fast With Tips & Old Results, 220 Patti Chart, Lucky Number Smart Matka Smart Mumbai Matks"
+        content="Smart Matka, Smart Mumbai Matka, Mumbai Matka Result Kolkata FATAFAT Result Today Live All 8 Baji Live Super Fast With Tips & Old Results, 220 Patti Chart, Lucky Number Smart Matka Smart Mumbai Matks"
       />
       <link rel="canonical" href="https://smartmumbaimatka.in" />
       {/* date */}

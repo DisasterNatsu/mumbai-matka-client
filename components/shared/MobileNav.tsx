@@ -3,7 +3,6 @@
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { LogIn, LogOut, NotebookPen, X } from "lucide-react";
-import Cookies from "js-cookie";
 import Image from "next/image";
 import { NavData } from "@/Constants/NavData";
 import { useRouter } from "next/navigation";

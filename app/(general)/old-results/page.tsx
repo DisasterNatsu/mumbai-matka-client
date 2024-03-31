@@ -22,7 +22,7 @@ const OldResults = async () => {
 
   return (
     <>
-      <title>Mumbai Matka | Old Results</title>
+      <title>Smart Matka | Old Results</title>
       <meta
         property="og:url"
         content="https://smartmumbaimatka.in/old-rresults"

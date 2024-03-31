@@ -8,17 +8,17 @@ import Image from "next/image";
 const LuckyNumber = () => {
   return (
     <>
-      <title>Mumbai Matka | Luckly Number</title>
-      <meta name="title" content="Mumbai Matka | Luckly Number [2024]" />
+      <title>Smart Matka | Luckly Number</title>
+      <meta name="title" content="Smart Matka | Luckly Number [2024]" />
       <meta
         name="description"
-        content="Mumbai Matka Lucky Number 2024 Lucky Number, Jay Guru Today Free Tips"
+        content="Smart Matka Lucky Number 2024 Lucky Number, Jay Guru Today Free Tips"
       />
       <link rel="canonical" href="https://smartmumbaimatka.in/lucky-number" />
-      <meta property="og:title" content="Mumbai Matka | Luckly Number [2024]" />
+      <meta property="og:title" content="Smart Matka | Luckly Number [2024]" />
       <meta
         property="og:description"
-        content="Mumbai Matka Lucky Number 2024 Lucky Number, Jay Guru Today Free Tips"
+        content="Smart Matka Lucky Number 2024 Lucky Number, Jay Guru Today Free Tips"
       />
       <div className="w-full h-full mt-5">
         <section className="flex w-full md:flex-row flex-col items-center md:items-start gap-5 md:gap-10 md:px-5">

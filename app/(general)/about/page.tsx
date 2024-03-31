@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <title>Mumbai Matka | About</title>
+      <title>Smart Matka | About</title>
       <meta property="og:url" content="https://smartmumbaimatka.in/about" />
 
       <div>
@@ -20,9 +20,9 @@ const About = () => {
               smartmumbaimatka.in
             </Link>
             , your one-stop destination for all the latest results and updates
-            of the Mumbai Matka game in India. Our platform is dedicated to
-            bringing you the most accurate and timely information about this
-            popular lottery game.
+            of the Smart Matka or Mumbai Matka game in India. Our platform is
+            dedicated to bringing you the most accurate and timely information
+            about this popular lottery game.
           </p>
           <p>
             At smartmumbaimatka.in, we understand that staying up-to-date with

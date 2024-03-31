@@ -4,7 +4,7 @@ import React from "react";
 const Privacy = () => {
   return (
     <div className="md:px-5 mt-5">
-      <title>Smart Mumbai Matka | Privacy</title>
+      <title>Smart Matka | Privacy</title>
       <meta property="og:url" content="https://smartmumbaimatka.in/privacy" />
       <h1 className="text-3xl font-semibold my-3">Privacy</h1>
       <p className="text-sm">

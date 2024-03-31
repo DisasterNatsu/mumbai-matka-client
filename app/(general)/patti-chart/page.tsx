@@ -11,20 +11,20 @@ import {
 const PattiChart = () => {
   return (
     <>
-      <title>Mumbai Matka | Complete Patti List Chart</title>
+      <title>Smart Matka | Complete Patti List Chart</title>
 
-      <meta name="title" content="Mumbai Matka Patti List, Patti Chart" />
+      <meta name="title" content="Smart Matka Patti List, Patti Chart" />
       <meta
         name="description"
-        content="Mumbai Matka Patti List All 220 Mumbai Matka Patti Chart and 10 Single Ghar Ke Sath Hai"
+        content="Smart Matka Patti List All 220 Smart Matka Patti Chart and 10 Single Ghar Ke Sath Hai"
       />
       <meta
         property="og:title"
-        content="Mumbai Matka Patti List 220 Panna Mumbai Matka Patti Chart"
+        content="Smart Matka Patti List 220 Panna Smart Matka Patti Chart"
       />
       <meta
         property="og:description"
-        content="Mumbai Matka Patti List All 220 Mumbai Matka Patti Chart and 10 Single Ghar Ke Sath Hai"
+        content="Smart Matka Patti List All 220 Smart Matka Patti Chart and 10 Single Ghar Ke Sath Hai"
       />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ const PattiChart = () => {
 
         <section className="flex flex-col w-full mt-5">
           <h1 className="w-full font-bold accent-colors text-center py-2 md:text-2xl text-lg">
-            Mumbai Matka List Chart
+            Smart Matka List Chart
           </h1>
         </section>
 

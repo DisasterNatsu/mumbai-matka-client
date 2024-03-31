@@ -39,12 +39,12 @@ const PattiTips = async () => {
 
   return (
     <>
-      <title>Mumbai Matka | Patti Tips</title>
+      <title>Smart Matka | Patti Tips</title>
       <meta
         name="description"
         content="Yaha Pe Daily Mumbai Smart Matka Tips for those who are confused what to play we provide a general solution"
       />
-      <meta property="og:title" content="Mumbai Matka | Patti Tips" />
+      <meta property="og:title" content="Smart Matka | Patti Tips" />
       <meta
         property="og:url"
         content="https://smartmumbaimatka.in/patti-tips"
@@ -58,11 +58,11 @@ const PattiTips = async () => {
 
       <div className="flex md:items-start justify-center items-center mt-4 flex-col space-y-3">
         <h1 className="font-bold text-2xl border-b dark:border-white pb-1 border-black">
-          Mumbai Matka Patti Tips
+          Smart Matka Patti Tips
         </h1>
 
         <p className="text-lg text-center md:text-start">
-          Here we are providing daily <strong>Mumbai Matka tips</strong> today
+          Here we are providing daily <strong>Smart Matka tips</strong> today
           lucky numbers and Baji updates.
         </p>
 
@@ -181,22 +181,22 @@ const PattiTips = async () => {
         <ol className="list-decimal space-y-2 text-lg">
           <li>
             <strong>Understand the Game Rules: </strong>Before you start playing
-            Mumbai Matka, make sure you understand the game rules and how it
+            Smart Matka, make sure you understand the game rules and how it
             works. Familiarize yourself with the different types of bets and
             payouts.
           </li>
           <li>
-            <strong>Bet Responsibly: </strong>Set a budget for your Mumbai Matka
+            <strong>Bet Responsibly: </strong>Set a budget for your Smart Matka
             bets and stick to it. Avoid chasing losses by betting more than you
             can afford to lose.
           </li>
           <li>
-            <strong>Analyze Previous Results: </strong>Study past Mumbai Matka
+            <strong>Analyze Previous Results: </strong>Study past Smart Matka
             results and look for patterns or movements. While this won&apos;t
             guarantee a win, it can provide some insights into the game.
           </li>
           <li>
-            <strong>Use Intuition and Strategy: </strong>Mumbai Matka involves
+            <strong>Use Intuition and Strategy: </strong>Smart Matka involves
             guessing numbers, so trust your intuition, but also consider using
             basic strategies. Some players track hot and cold numbers or use
             other methods to make educated guesses.
@@ -218,9 +218,9 @@ const PattiTips = async () => {
             always do so within your budget.
           </li>
           <li>
-            <strong>Manage Expectations: </strong>Understand that Mumbai Matka
-            is primarily a game of luck, and there&apos;s no foolproof strategy
-            for winning consistently. Treat it as entertainment rather than a
+            <strong>Manage Expectations: </strong>Understand that Smart Matka is
+            primarily a game of luck, and there&apos;s no foolproof strategy for
+            winning consistently. Treat it as entertainment rather than a
             guaranteed income source.
           </li>
           <li>
@@ -230,12 +230,12 @@ const PattiTips = async () => {
           </li>
           <li>
             <strong>Be Cautious of Scams: </strong>Be wary of scams or
-            fraudulent schemes related to Mumbai Matka. Stick to trusted
+            fraudulent schemes related to Smart Matka. Stick to trusted
             platforms and avoid offers that seem too good to be true.
           </li>
           <li>
             <strong>Respect Local Laws: </strong>Ensure that you are playing
-            Mumbai Matka in compliance with local laws and regulations regarding
+            Smart Matka in compliance with local laws and regulations regarding
             gambling and lotteries.
           </li>
           <li>
@@ -251,12 +251,12 @@ const PattiTips = async () => {
           href={"/"}
           className="py-5 accent-colors w-full text-center rounded-md text-xl md:text-2xl lg:text-3xl font-semibold hover:scale-105 duration-500"
         >
-          Mumbai Matka
+          Smart Matka
         </Link>
       </section>
 
       <p>
-        Remember that Mumbai Matka should be played for entertainment purposes,
+        Remember that Smart Matka should be played for entertainment purposes,
         and there are no guaranteed strategies for winning. Always gamble
         responsibly and within your means, and be prepared to accept both wins
         and losses in the game.

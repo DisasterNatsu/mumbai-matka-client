@@ -38,7 +38,7 @@ const Navbar = () => {
               />
               <div className="flex flex-col -space-y-1">
                 <h1 className="-ml-1 text-lg xl:text-xl font-bold">
-                  Mumbar Matka
+                  Mumbai Matka
                 </h1>
                 <p className="-ml-1 text-xs">🚀 Sabse pahele result 🚀</p>
               </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
               />
               <div className="flex flex-col -space-y-1">
                 <h1 className="-ml-2 text-lg xl:text-xl font-bold">
-                  Mumbar Matka
+                  Mumbai Matka
                 </h1>
                 <p className="-ml-2 text-xs">🚀 Sabse pahele result 🚀</p>
               </div>

@@ -24,15 +24,15 @@ const Tips = async () => {
 
   return (
     <>
-      <title>Mumbai Matka | Tips</title>
+      <title>Smart Matka | Tips</title>
 
       <div className="flex md:items-start justify-center items-center mt-4 flex-col space-y-3">
         <h1 className="font-bold text-2xl border-b dark:border-white pb-1 border-black">
-          Mumbai Matka Tips
+          Smart Matka Tips
         </h1>
 
         <p className="text-lg text-center md:text-start">
-          Here we are providing daily <strong>Mumbai Matka tips</strong> today
+          Here we are providing daily <strong>Smart Matka tips</strong> today
           lucky numbers and Baji updates.
         </p>
 
